@@ -4,13 +4,8 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/app/**/*.js'],
   coverageDirectory: '__tests__/coverage',
-  coverageReporters: [
-    'text',
-    'lcov',
-  ],
+  coverageReporters: ['text', 'lcov'],
   testEnvironment: 'node',
-  testMatch: [
-    '**/__tests__/**/*.js',
-  ],
+  testMatch: ['**/__tests__/**/*.js'],
   transform: { '.(js|jsx|ts|tsx)': '@sucrase/jest-plugin' },
 };
