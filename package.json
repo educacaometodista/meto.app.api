@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/educacaometodista/meto.app.api.git",
   "author": "LeuAlmeida <leo@webid.net.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
 }
