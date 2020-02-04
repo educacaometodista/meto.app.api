@@ -6,7 +6,8 @@
   "author": "LeuAlmeida <leo@webid.net.br>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "test": "jest"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
