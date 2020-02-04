@@ -5,6 +5,9 @@
   "repository": "https://github.com/educacaometodista/meto.app.api.git",
   "author": "LeuAlmeida <leo@webid.net.br>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
