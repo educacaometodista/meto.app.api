@@ -1,0 +1,8 @@
+{
+  "name": "meto.app.api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/educacaometodista/meto.app.api.git",
+  "author": "LeuAlmeida <leo@webid.net.br>",
+  "license": "MIT"
+}
