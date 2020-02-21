@@ -1,5 +1,5 @@
 module.exports = {
-  bail: 1,
+  bail: 0,
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: ['src/app/**/*.js'],
