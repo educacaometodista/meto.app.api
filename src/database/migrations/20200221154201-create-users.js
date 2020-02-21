@@ -28,7 +28,6 @@ module.exports = {
       },
       graduated: {
         type: Sequelize.BOOLEAN,
-        allowNull: false,
         defaultValue: false,
       },
       avatar_id: {
