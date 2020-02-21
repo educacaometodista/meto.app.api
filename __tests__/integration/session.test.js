@@ -6,15 +6,10 @@ describe('User', () => {
     const response = await request(app)
       .post('/session')
       .send({
-        name: 'Léu Almeida',
         email: 'leo@webid.net.br',
-        cpf: 56754842059,
-        ra: 274881,
-        password_hash: '123456',
-        gratuade: false,
-        phone: 11940028922,
+        password: 123456,
       });
 
-    expect(response.body).toHaveProperty('id');
+    expect(response.body).toHaveProperty('token');
   });
 });
