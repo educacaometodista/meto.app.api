@@ -7,13 +7,13 @@ class User extends Model {
       {
         name: Sequelize.STRING,
         email: Sequelize.STRING,
-        cpf: Sequelize.INTEGER,
+        cpf: Sequelize.BIGINT,
         ra: Sequelize.INTEGER,
         password: Sequelize.VIRTUAL,
         password_hash: Sequelize.STRING,
         graduated: Sequelize.BOOLEAN,
         avatar_id: Sequelize.INTEGER,
-        phone: Sequelize.INTEGER,
+        phone: Sequelize.BIGINT,
       },
       {
         sequelize,
