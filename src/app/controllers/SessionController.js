@@ -1,9 +1,7 @@
 import User from '../models/User';
 
-class UserController {
-  async store(req, res) {
-    return res.json({ ok: true });
-  }
+class SessionController {
+  async store(req, res) {}
 }
 
-export default new UserController();
+export default new SessionController();
