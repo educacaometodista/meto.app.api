@@ -4,17 +4,14 @@ import User from '../models/User';
 
 class UserController {
   async store(req, res) {
-    const schema = Yup.obect().shape({
+    const schema = Yup.object().shape({
       name: Yup.string().required(),
       email: Yup.string().required(),
       cpf: Yup.number().required(),
       password: Yup.string()
         .min(6)
         .required(),
-      phone: Yup.number()
-        .min(11)
-        .max(11)
-        .required(),
+      phone: Yup.number().required(),
     });
 
     if (!(await schema.isValid(req.body))) {
@@ -68,6 +65,12 @@ class UserController {
       cpf,
       phone,
     });
+  }
+
+  async index(req, res) {
+    const users = await User.findAll();
+
+    return res.json(users);
   }
 }
 
