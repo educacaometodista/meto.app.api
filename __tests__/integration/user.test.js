@@ -10,7 +10,7 @@ describe('User', () => {
         email: 'leo@webid.net.br',
         cpf: 15549529050,
         ra: 274881,
-        password: 123456,
+        password: '123456',
         phone: 11940028922,
       });
 
