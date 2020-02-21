@@ -2,7 +2,7 @@ import request from 'supertest';
 import app from '../../src/app';
 
 describe('User', () => {
-  it('Should be able to register', async () => {
+  it('should be able to login', async () => {
     const response = await request(app)
       .post('/session')
       .send({
