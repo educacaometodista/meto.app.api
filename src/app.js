@@ -1,7 +1,9 @@
+import 'dotenv/config';
+
 import Youch from 'youch';
 import express from 'express';
 
-// import routes from './routes';
+import routes from './routes';
 
 class App {
   constructor() {
@@ -17,7 +19,7 @@ class App {
   }
 
   routes() {
-    // this.server.use(routes);
+    this.server.use(routes);
   }
 
   exceptionHandler() {
