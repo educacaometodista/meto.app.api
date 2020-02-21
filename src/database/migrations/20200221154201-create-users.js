@@ -4,8 +4,12 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        primaryKey: true,
         autoIncrement: true,
+        primaryKey: true,
+      },
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       email: {
         type: Sequelize.STRING,
@@ -13,7 +17,7 @@ module.exports = {
         unique: true,
       },
       cpf: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
         allowNull: false,
         unique: true,
       },
@@ -23,7 +27,7 @@ module.exports = {
         unique: true,
       },
       password_hash: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       graduated: {
@@ -38,7 +42,7 @@ module.exports = {
         allowNull: true,
       },
       phone: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.BIGINT,
         allowNull: true,
         unique: true,
       },
